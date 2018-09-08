@@ -1,0 +1,7 @@
+{
+nameSpace : com.YHStudio.sql.dao.Execute&
+add : [id : addStaffInfo|paramType : com.YHStudio.sql.entity.StaffBean|sql : insert into staff(staff_name,staff_age,department_id,sex,phone,hobby,salary) values(${staff_name},${staff_age},${department_id},${sex},${phone},${hobby},${salary});]&
+query : [id : queryStaffInfo|paramType : com.YHStudio.sql.entity.StaffBean|resType : com.YHStudio.sql.entity.StaffBean|sql : select * from staff where staff_name = ${staff_name};]&
+delete : [id : deleteStaffInfo|paramType : com.YHStudio.sql.entity.StaffBean|sql : delete from staff where staff_name = ${staff_name} and staff_age = ${staff_age}]&
+update : [id : updateStaffInfo|paramType : com.YHStudio.sql.entity.StaffBean|sql : update staff set staff_name = ${staff_name} where staff_id = '22']&
+}

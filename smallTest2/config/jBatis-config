@@ -1,0 +1,5 @@
+sqlDriver = com.mysql.jdbc.Driver
+sqlUrl = jdbc:mysql://localhost:3306/staffInfoManageDB
+useName = root
+usePwd = lj5211314
+<import href="/smallTest2/config/mapper.jdtl" />
